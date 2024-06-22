@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Add Hostels
+  body
+    h1 ADD Hostel
+    form(action="/api/addhostel", method="POST")
+      div
+        label(for="h_name") Hostel Name:
+        input(type="text", id="h_name", name="h_name", required)
+      div
+        label(for="h_location") Hostel location:
+        input(type="h_location", id="h_location", name="h_location", required)
+      div
+        label(for="vacancies") vacancies:
+        input(type="vacancies", id="vacancies", name="vacancies", required)
+      div
+        label(for="contact") contact:
+        input(type="contact", id="contact", name="contact", required)
+      div
+        label(for="rent") Rent:
+        input(type="rent", id="rent", name="rent", required)
+      div
+        label(for="h_images") Hostel imgurl:
+        input(type="h_images", id="h_images", name="h_images", required)
+      div
+        button(type="submit") ADD

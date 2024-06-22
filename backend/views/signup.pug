@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Signup
+  body
+    h1 SignUp
+    form(action="/signup", method="POST")
+      div
+        label(for="username") Username:
+        input(type="text", id="username", name="username", required)
+      div
+        label(for="password") Password:
+        input(type="password", id="password", name="password", required)
+      div
+        label(for="email") email:
+        input(type="email", id="email", name="email", required)
+      div
+        label(for="usertype") User Type:
+        input(type="usertype", id="usertype", name="usertype", required)
+      div
+        button(type="submit") signup
